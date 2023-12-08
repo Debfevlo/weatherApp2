@@ -1,8 +1,13 @@
 body{
-    background-color: #f9f7fe;
+    background-color: #F3F3F4;
     font-family: 'Montserrat', sans-serif;
 }
-
+.overall-container{
+    max-width: 1000px;
+    background-color: #7898C7;
+    padding: 30px;
+    border-radius: 16px;
+}
 .weather-app{
     background: #fff;
     max-width: 600px;
