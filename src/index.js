@@ -16,6 +16,10 @@ function displayTemperature(response){
     let windyElement = document.querySelector("#windy");
     windyElement.innerHTML = `${response.data.wind.speed}km/h`;
 
+    
+let iconElement = document.querySelector('#icon');
+iconElement.innerHTML =` <img src="${response.data.condition.icon_url}" class="weather-emoji"></img>`
+
     let timeElement = document.querySelector('#time');
     let date = new Date(response.data.time * 1000);
     timeElement.innerHTML = formatDate(date);
@@ -34,7 +38,7 @@ function displayTemperature(response){
 
          ]
 
-         if(minute > 10){
+         if(minute < 10){
             minute = `0${minute}`;
          }
           let day = days[date.getDay()];
