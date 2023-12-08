@@ -14,28 +14,38 @@
 <body>
     <div class="weather-app">
     <header>
-        <form>
-            <input type="search" placeholder="Enter a city.." required>
-            <input type="submit" value="search">
+        <form class="search-form">
+            <input type="search" placeholder="Enter a city.." required class="search-input">
+            <input type="submit" value="search" class="submit-input">
         </form>
     </header>
 
     <main>
+    <div class="box">
         <div>
-            <h1>
+            <h1 class="weather-city">
                 Accra
             </h1>
-            <p>
+            <p class="weather-details">
                 Friday 10:20am, scattered clouds
                 <br />
-                Humidity:66%, Windy 3.13km/h
+                Humidity: <strong>66%</strong>, Windy: <strong>3.13km/h</strong>
             </p>
         </div>
        
-        <div>
-            ☁ 12&degc
+        <div class="weather-temperatures">
+            <div class="weather-emoji">
+                ☁
+            </div>
+
+            <div class="weather-number">
+                12
+            </div>
+            <div class="weather-degrees">
+                &degC;
+            </div>
         </div>
-       
+    </div>
     </main>
     
     <footer>

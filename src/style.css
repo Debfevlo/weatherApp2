@@ -11,3 +11,83 @@ body{
     box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
     border-radius: 16px;
 }
+
+header{
+    border-bottom: 1px solid #885df1 ;
+    padding: 0 0 30px 0;
+}
+
+main{
+    padding: 30px 0;
+}
+
+a {
+    color: #885df1;
+}
+
+strong{
+    color: #f65282;
+}
+
+.search-input{
+    background-color: #f9f7fe;
+    width: 80%;
+    border: none;
+    border-radius: 6px;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+.submit-input{
+    border: none;
+    border-radius:6px ;
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #885df1;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.weather-city{
+    margin: 0;
+    line-height: 48px;
+    font-size: 38px;
+}
+
+.weather-details{
+    line-height: 24px;
+    font-size: 16px;
+    color: rgba(39, 33, 66, 0.4);
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-temperatures{
+    display: flex;
+}
+
+.weather-number{
+    font-size: 75px;
+    margin-left: 10px;
+}
+
+.weather-emoji{
+    font-size: 44px;
+    margin-top: 22px;
+}
+
+.weather-degrees{
+    font-size: 28px;
+    margin-top: 16px;
+}
+
+footer{
+    border-top: 1px solid #885df1;
+    padding: 30px 0 0 0;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+}
