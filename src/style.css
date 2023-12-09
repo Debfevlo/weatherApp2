@@ -95,6 +95,24 @@ strong{
     margin-top: 16px;
 }
 
+.weather-forecast{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.temperature1{
+    font-size: 13px;
+}
+
+.monday{
+    font-size: 16px;
+}
+
+.weather-forecst-temperature-minimun{
+    opacity: 0.5;
+}
+
 footer{
     border-top: 1px solid #c2b9d9;
     padding: 30px 0 0 0;
@@ -102,3 +120,6 @@ footer{
     font-size: 12px;
     color: rgba(0, 0, 0, 0.6);
 }
+
+
+
