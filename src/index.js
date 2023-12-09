@@ -66,3 +66,30 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener('submit', handleSearch);
 
 searchCity('Kumasi');
+
+function displayForecast(){
+    let forecastElement= document.querySelector('#forecast');
+
+    let days = ['Tue', 'Wed', 'Thu', 'Fr', 'Sat', 'Sun'];
+    let forecastHtml = '';
+
+
+    days.forEach(function(day){
+
+        forecastHtml = forecastHtml + `<div class="day1">
+           <div class="monday">${day}</div>  
+            <div class="image1"> <img src="" alt=""> </div>
+            <div class="temperature1">
+                <span class="weather-forecst-temperature-maximum">
+                    18
+                </span>
+                <span class="weather-forecst-temperature-minimun">
+                    12
+                </span> 
+            </div>
+        </div>
+`;
+    })
+ forecastElement.innerHTML = forecastHtml;
+}
+displayForecast();

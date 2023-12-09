@@ -33,7 +33,7 @@ main{
 }
 
 a {
-    color: #885df1;
+    color: #161515;
 }
 
 strong{
@@ -99,6 +99,7 @@ strong{
     margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
+    
 }
 
 .temperature1{
