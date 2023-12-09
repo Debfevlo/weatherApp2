@@ -24,6 +24,8 @@ iconElement.innerHTML =` <img src="${response.data.condition.icon_url}" class="w
     let date = new Date(response.data.time * 1000);
     timeElement.innerHTML = formatDate(date);
 
+    getforecast(response.data.city);
+
     function formatDate(date){
         let minute = date.getMinutes();
         let hour = date.getHours();
@@ -62,12 +64,20 @@ function handleSearch(event){
     searchCity(searchValue.value)
 }
 
+function getforecast(city){
+    let apiKey = 'ff563b340abb1ee5o90065fc5t0af55d';
+    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`
+    axios(apiUrl).then(displayForecast)
+    console.log(apiUrl)
+}
+
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener('submit', handleSearch);
 
-searchCity('Kumasi');
 
-function displayForecast(){
+
+function displayForecast(response){
+    console.log(response.data)
     let forecastElement= document.querySelector('#forecast');
 
     let days = ['Tue', 'Wed', 'Thu', 'Fr', 'Sat', 'Sun'];
@@ -92,4 +102,5 @@ function displayForecast(){
     })
  forecastElement.innerHTML = forecastHtml;
 }
-displayForecast();
+getforecast('Paris')
+searchCity('Kumasi');
