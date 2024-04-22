@@ -153,6 +153,21 @@ footer{
    }
 
    .condition-classificaton{
+    font-size: 5px;
+   }
+
+   .weather-number{
+    font-size: 30px;
+    margin-right: 80px;
+   }
+
+   .weather-degrees{
     font-size: 10px;
+    margin-top: 0px;
+    margin-right: 80px;
+   }
+
+   .weather-city{
+    font-size: 25px;
    }
 }
