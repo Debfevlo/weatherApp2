@@ -40,6 +40,7 @@ strong{
     color: #000;
 }
 
+
 .search-input{
     background-color: #f9f7fe;
     width: 80%;
@@ -137,3 +138,20 @@ footer{
 
 
 
+
+
+@media screen and (max-width: 768px) {
+
+   .search-input{
+    width: 60%;
+   }
+   
+   .submit-input{
+    width: 30%;
+    font-size:15px;
+   }
+
+   .condition-classificaton{
+    font-size: 10px;
+   }
+}
